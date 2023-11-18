@@ -11,7 +11,6 @@ header{
     justify-content: center;
 
     position: relative;
-    left: 10%;
     z-index: 1;
 
     background-image: url(../assets/Mitsubishi_logo.svg.png);
@@ -21,7 +20,7 @@ header{
     background-size: 20vh;
 
     height: 20vh;
-    width: 90%;
+    width: 100%;
 
     background-color: #f5f5f5;
     border-bottom: solid 2px #808080 ;
@@ -48,7 +47,7 @@ nav{
     width: 10vw;
     height: 100%;
 
-    background-color: #808080;
+    background-color: #252525;
     font-size: 2vh;
     text-decoration: none;
 
@@ -56,8 +55,14 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: space-around ;
-
 }
+
+#navbar {
+    position: fixed; 
+    top: 0; 
+    width: 10vw; 
+    transition: left 0.3s; 
+  }
 
 .bouton{
     overflow:hidden;
@@ -68,16 +73,16 @@ nav{
     padding: 1vw;
     display: block;
     text-align: center;
-    background-color: #a9a9a9;
-    border: solid 2px #a9a9a9;
-    color: #000000;
+    background-color: #a23cff;
+    border: solid 2px #a23cff;
+    color: whitesmoke;
 
 }
 
 .bouton:hover{
-    background-color: #000000;
-    color: #a9a9a9;
-    border: solid 2px #a9a9a9;
+    background-color: #a23cff;
+    color: #252525;
+    border: solid 2px #252525;
    
 }
 
@@ -88,8 +93,7 @@ main{
     align-items: center;
 
     position: relative;
-    left: 10%;
-    width: 90%;
+    width: 100%;
     background-color: #b8b8b8;
 
     background-image: url(../assets/carbon.png);

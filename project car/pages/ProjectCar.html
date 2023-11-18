@@ -12,14 +12,29 @@
         <H2>Mitsubishi Eclise 1998</H2>
     </header>
 
-    <nav>
-        <ol><a class="bouton" href="#section1">histoire du modele</a></ol>
-        <ol><a class="bouton" href="#section2">pourquoi ce modele</a></ol>
-        <ol><a class="bouton" href="#section3">histoire de ma voiture</a></ol>
-        <ol><a class="bouton" href="#section4">projet</a></ol>
-        <ol><a class="bouton" href="#section5">avance du projet</a></ol>
+    <div class="navcontainer">
+        <nav id="navbar">
+            <ol><a class="bouton" href="#section1">histoire du modele</a></ol>
+            <ol><a class="bouton" href="#section2">pourquoi ce modele</a></ol>
+            <ol><a class="bouton" href="#section3">histoire de ma voiture</a></ol>
+            <ol><a class="bouton" href="#section4">projet</a></ol>
+            <ol><a class="bouton" href="#section5">avance du projet</a></ol>
 
-    </nav>
+        </nav>
+    </div>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.left= "0";
+          } else {
+            document.getElementById("navbar").style.left = "-10vw";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
 
     <main>
         <section id="section1">
@@ -103,7 +118,7 @@
                     <li><a target="_blank" href="https://www.driftshop.fr/volant-driftshop-tulipe-violet.html">volant driftshop=50</a></li>
                     <li><a target="_blank" href="https://www.driftshop.fr/calculateur-maxxecu-race.html">calculateur maxxecu race "plug in" extra evo4 a 8=1600</a></li>
                     <li><a target="_blank" href="https://www.driftshop.fr/calculateur-maxxecu-race.html">filtre a air=90</a></li>
-                    <li>>piping admition=50</li>
+                    <li>piping admition=50</li>
                     <li><a target="_blank" href="https://www.showoffimports.nl/product.php?productid=28990">echappement catback=400</a></li>
                     <li><a target="_blank" href="https://www.showoffimports.nl/product.php?productid=29170">cata sport=150</a></li>
                     <li>total=7130€</li>
